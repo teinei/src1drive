@@ -1,3 +1,6 @@
+/*
+v1 calculate average of weight, without array
+*/
 #include <stdio.h>
 int main(void) {
     //
