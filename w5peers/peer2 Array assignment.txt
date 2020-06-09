@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int size[5]={99,34,67,90,78};
+	int total,i;
+	float average;
+	for(i=0;i<5;i++)
+	{
+	total=total+size[i];
+}
+	average=(float)total/i;
+	printf("the average weight population of elephants is %.2f",average);
+	return 0;
+}

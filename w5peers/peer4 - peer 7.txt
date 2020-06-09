@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(void)
+{
+    
+    /*Using a smaller set from the same data provided. */
+    int weight[20] = {5713, 6936 , 8764, 6702, 8535, 8654, 8710, 8332, 4948, 7627, 5472, 5311, 7331, 8719, 6135, 6672, 5786, 7113, 5292, 6923};
+    double sum = 0.0;
+    int i;
+
+    for(i=0; i<20; i ++)
+    {
+        sum = sum+weight[i];
+    }
+    printf("average is %lf\n\n", sum/20);
+    return 0;
+}
