@@ -1,4 +1,10 @@
 /*
+v2 of array, v3 overall
+functions are coded
+*/
+//struct of array of arraysize
+
+/*
 7.3b reading from a file
 Dartmouth IMT -C programming
 ******************************
@@ -10,11 +16,12 @@ version 4, functions are used - in a make-able file
 #include <stdio.h>
 
 int average(char* filename);
+void file2array(char* filename);
 
 int main(void)
 {
     // 
-    char* filename = "studentGrades.txt";
+    char* filename = "elephant_seal_data.txt";
     int av0 = average(filename);
     //    
     return 0;
@@ -36,12 +43,18 @@ int average(char* filename){
         printf("No data found!\n");
         return 1;
     }
-
+    printf("{");//jo code
     while (fscanf(gradesfile, "%d", &grade) != EOF)
     {
+        if(ngrades!=0)printf(",");//jo code
         ngrades++;
         sumgrades += grade;
+        //jo code
+        printf("%d",grade);
+        //jo code
     }
+    printf("}");//jo code
+    printf("\n");//jo code
 
     average = sumgrades / (double) ngrades;
     printf("%.2lf\n", average);
@@ -50,3 +63,4 @@ int average(char* filename){
     return average;
     //
 }
+    
